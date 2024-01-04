@@ -12,7 +12,8 @@ def add_todo():
 
 st.title("To-Do App")
 st.subheader("Developed by Erkan Gulec in Python")
-st.write("This app will improve your productivity.")
+st.write("This app will improve your <b>productivity</b>.",
+         unsafe_allow_html=True)
 
 for index, todo in enumerate(todos):
     check_box = st.checkbox(todo, key=index)
